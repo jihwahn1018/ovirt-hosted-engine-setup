@@ -410,11 +410,11 @@ class Plugin(plugin.PluginBase):
             ovirt_repo_address = self.dialog.queryString(
                 name='OVIRT_REPOSITORY_ADDRESS',
                 note=_(
-                    'Please enter the oVirt repository domain name or IP address '
+                    'Please enter the HyperVM repository domain name or IP address '
                     'to be used for the engine VM (leave it empty to skip) [@DEFAULT@]: '
                 ),
                 prompt=True,
-                default='http://prolinux-repo.tmaxos.com/ovirt/4.4/el8/x86_64',
+                default='http://hypervm-repo.tmaxcloud.com/hypervm-22.0.0/rpm/pl8',
             )
             self.environment[
                 ohostedcons.CloudInit.OVIRT_REPO_ADDRESS
